@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Проект | Лекции и Тесты</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="hero">
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20">
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="hero__inner">
+      <h1 class="hero__title">Название проекта</h1>
+      <p class="hero__subtitle">Образовательная платформа</p>
+    </div>
+    <div class="hero__glow"></div>
+  </header>
+
+  <!-- ПЛАШКА О НАС -->
+  <section class="about-wrap">
+    <div class="about">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">
+        Мы — команда, которая делает обучение понятным и удобным.
+        Здесь собраны лекции и тесты по ключевым темам. Изучай материал,
+        закрепляй знания и проверяй себя в интерактивном формате.
+      </p>
+    </div>
+  </section>
+
+  <!-- ОГЛАВЛЕНИЕ -->
+  <section class="toc-wrap" id="toc">
+    <nav class="toc" aria-label="Оглавление">
+      <h2 class="toc__title">Оглавление</h2>
+      <ol class="toc__list">
+        <li><a href="#lec-01" data-toc-link>Цифровой след: что мы оставляем в сети</a></li>
+        <li><a href="#lec-02" data-toc-link>Пароли и менеджеры паролей, двухфакторная аутентификация</a></li>
+        <li><a href="#lec-03" data-toc-link>Фишинг и социальная инженерия: как распознать обман</a></li>
+        <li><a href="#lec-04" data-toc-link>Безопасность в мессенджерах и соцсетях: настройки приватности</a></li>
+        <li><a href="#lec-05" data-toc-link>Мошенничество в онлайн-играх и внутриигровых чатах</a></li>
+        <li><a href="#lec-06" data-toc-link>Опасные тренды и челленджи в интернете</a></li>
+        <li><a href="#lec-07" data-toc-link>Защита персональных данных: что не стоит выкладывать</a></li>
+        <li><a href="#lec-08" data-toc-link>Безопасный поиск и проверка источников информации</a></li>
+        <li><a href="#lec-09" data-toc-link>Кибербуллинг и цифровая этика: как реагировать</a></li>
+        <li><a href="#lec-10" data-toc-link>Безопасность на маркетплейсах и онлайн-платформах</a></li>
+        <li><a href="#lec-11" data-toc-link>Безопасность мобильных устройств: обновления и разрешения</a></li>
+        <li><a href="#lec-12" data-toc-link>Риски публичных Wi-Fi и способы защиты</a></li>
+        <li><a href="#lec-13" data-toc-link>Приватность в фото и видео: метаданные и геотеги</a></li>
+        <li><a href="#lec-14" data-toc-link>Интернет и закон: ответственность за действия в сети</a></li>
+        <li><a href="#lec-15" data-toc-link>План действий при инциденте (взлом, угрозы)</a></li>
+      </ol>
+      <div class="toc__tests">
+        <span class="toc__tests-label">Тесты:</span>
+        <a href="#test-01" data-toc-link>Цифровой след</a>
+        <a href="#test-02" data-toc-link>Персональные данные</a>
+        <a href="#test-03" data-toc-link>Кибербезопасность</a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- ОСНОВНОЙ КОНТЕНТ -->
+  <main class="content">
+
+    <!-- ЛЕКЦИИ -->
+    <section class="panel">
+      <header class="panel__header">
+        <h2 class="panel__title">Лекции</h2>
+        <span class="panel__badge">Материалы</span>
+      </header>
+
+      <div class="accordion" data-accordion>
+
+        <div class="item" id="lec-01">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">01</span>
+            <span class="item__name">Цифровой след: что мы оставляем в сети</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                <b>Цифровой след</b> — это все данные, которые остаются после вашей активности в сети.
+                Он бывает <b>активный</b> (вы сами публикуете: посты, комментарии, фото, отзывы, регистрации) и <b>пассивный</b> (собирается автоматически: IP-адрес, cookies, геолокация, история браузера, метаданные устройств).
+                След формируют соцсети, поисковики, магазины, приложения и даже «умные» устройства. Важно понимать: интернет плохо забывает — удалённые посты могут сохраняться в кэше, копиях и архивах.
+                След влияет на репутацию, может использоваться для травли, мошенничества, доксинга и социальной инженерии. Практика: минимизируйте лишние данные при регистрации, проверяйте настройки приватности,
+                используйте разные почты для разных целей, периодически «гуглите себя», удаляйте старые аккаунты и непубличную информацию.
+              </p>
+              <p>
+                Понимание цифрового следа важно для защиты приватности,
+                репутации и цифровой гигиены.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-02">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">02</span>
+            <span class="item__name">Пароли и менеджеры паролей, двухфакторная аутентификация</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                <b>Пароль</b> — первый барьер доступа к аккаунтам.
+                Главные правила: пароли должны быть <b>длинными и уникальными</b> для каждого сервиса (минимум 12–16 символов, лучше — случайная фраза), их нельзя повторять и нельзя хранить в заметках или на стикерах.
+                Человеку сложно запомнить десятки уникальных паролей, поэтому используют <b>менеджеры паролей</b> — программы, которые генерируют и хранят пароли в зашифрованном виде под одним мастер-паролем.
+                <b>Двухфакторная аутентификация (2FA)</b> добавляет второй фактор: код из приложения, push-уведомление или аппаратный ключ. Даже если пароль украдут, без второго фактора вход не состоится. Лучше использовать приложения-аутентификаторы или аппаратные ключи, чем SMS (SMS уязвимы к перехвату и подмене SIM).
+                Никогда не сообщайте коды 2FA никому — ни «поддержке», ни «другу».
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-03">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">03</span>
+            <span class="item__name">Фишинг и социальная инженерия: как распознать обман</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                <b>Фишинг</b> — это мошенничество, при котором злоумышленник выманивает данные (пароли, коды, карты) или заставляет совершить действие (перевести деньги, установить программу).
+                Социальная инженерия воздействует на эмоции: страх, срочность, жадность, любопытство, авторитет.
+                Типичные признаки: неожиданное сообщение о «блокировке», «выигрыше», «штрафе»; требование действовать немедленно; просьба сообщить код или пароль;
+                подозрительная ссылка; ошибки в тексте; несовпадение адреса отправителя; просьба установить программу или перейти по ссылке.
+                Виды: массовый фишинг, целевой (spear phishing), «фишинг руководства» (BEC), поддельные сайты и QR-коды (quishing).
+                Правило: <b>не переходите по ссылкам из подозрительных сообщений</b> — заходите на сайт вручную; проверяйте адрес; сомневаетесь — перезвоните по официальному номеру. Никакая настоящая организация не просит пароль или код 2FA.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-04">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">04</span>
+            <span class="item__name">Безопасность в мессенджерах и соцсетях: настройки приватности</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                В мессенджерах и соцсетях важны три вещи: <b>кто вас видит, кто может вам писать и что о вас можно узнать</b>.
+                Настройте приватность: закройте профиль от посторонних, ограничьте видимость номера телефона, списка друзей, фото,
+                геолокации и статуса «онлайн». В мессенджерах включите двухфакторную аутентификацию, проверьте настройки «кто может
+                добавлять в группы», отключите автозагрузку файлов от неизвестных, используйте сквозное шифрование (secret chats).
+                Осторожно с публикацией: фото билетов, документов, адреса, расписания поездок, школы ребёнка. Не принимайте незнакомцев в
+                друзья «просто так» — это источник социальной инженерии и травли. Помните: пересланные скриншоты и сообщения могут стать публичными;
+                «исчезающие» сообщения не гарантируют полного удаления.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-05">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">05</span>
+            <span class="item__name">Мошенничество в онлайн-играх и внутриигровых чатах</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                В играх мошенники используют доверие и азарт.
+                Схемы: «бесплатные скины/валюта» по ссылке, просьба «одолжить» предмет или аккаунт,
+                фейковые трейды (подмена предмета), продажа аккаунтов, «помощь» с выводом средств, фишинговые
+                сайты под видом официальных, просьбы установить мод или чит (часто это вредоносное ПО).
+                В чатах — давление, шантаж, «дружба» ради доступа. Правила: не переходите по внешним ссылкам,
+                не сообщайте логин/пароль и коды, не устанавливайте сторонние программы, используйте официальные
+                торговые площадки, включайте 2FA, проверяйте каждую сделку в интерфейсе игры, не доверяйте «гарантам»
+                из чата. Помните: бесплатный сыр — приманка; администрация игры никогда не просит пароль.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-06">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">06</span>
+            <span class="item__name">Опасные тренды и челленджи в интернете</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Вирусные челленджи и тренды дают ощущение причастности и лайки, но могут быть опасны для здоровья, психики, приватности и закона.
+                Признаки опасного тренда: требуется риск для жизни/здоровья, нарушение закона, унижение других, передача личных данных,
+                «испытание» на выносливость, призыв к травле или вандализму. Механика вовлечения: срочность, соревнование, страх «выпасть
+                из компании», давление сверстников. Алгоритмы соцсетей усиливают эмоциональный и рискованный контент. Правила: критически
+                оценивайте последствия, не участвуйте в опасном ради лайков, не снимайте и не распространяйте опасные ролики
+                (это может подтолкнуть других), сообщайте взрослым/модераторам о угрозах, помните об ответственности и о том,
+                что видео останется в сети.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-07">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">07</span>
+            <span class="item__name">Защита персональных данных: что не стоит выкладывать</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Персональные данные — любая информация, по которой можно вас идентифицировать:
+                <b>ФИО, дата рождения, адрес, телефон, email, паспорт, СНИЛС, фото, биометрия, геолокация, IP</b>.
+                Не выкладывайте публично: документы и их номера, домашний адрес и точную геолокацию,
+                номер школы/класса и расписание, данные банковских карт, медицинские сведения, фото ключей и
+                пропусков, билеты со штрихкодами, данные членов семьи без их согласия. Опасности: кража личности,
+                мошенничество, доксинг, сталкинг, шантаж. Принцип минимизации данных: сообщайте только необходимое;
+                проверяйте, зачем сайту поле «необязательно»; отзывайте доступ приложений к контактам, камере, геолокации;
+                используйте псевдонимы там, где это уместно; помните о праве на защиту персональных данных.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-08">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">08</span>
+            <span class="item__name">Безопасный поиск и проверка источников информации</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                В интернете много недостоверной информации: фейки, манипуляции, реклама под видом новостей, ИИ-контент.
+                Правила безопасного поиска: используйте официальные и первоисточники; проверяйте дату публикации;
+                смотрите на автора и его компетенцию; ищите подтверждение в 2–3 независимых источниках; отделяйте факты от мнений;
+                настороженно относитесь к кричащим заголовкам, эмоциональным призывам и «сенсациям»; проверяйте фото и видео
+                (обратный поиск изображений, признаки монтажа и ИИ-генерации); не переходите по рекламным и подозрительным ссылкам;
+                для поиска используйте проверенные поисковики и настройки безопасного поиска. Критическое мышление — главный инструмент:
+                задавайте вопросы <b>«кто это сказал?»</b>, <b>«зачем?»</b>, <b>«есть ли доказательства?»</b>, <b>«что опущено?»</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-09">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">09</span>
+            <span class="item__name">Кибербуллинг и цифровая этика: как реагировать</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                <b>Кибербуллинг</b> — систематическая травля в сети: оскорбления, угрозы, распространение слухов и фото, исключение из групп,
+                преследование. <b>Особенности</b>: круглосуточность, анонимность агрессора, широкая аудитория, следы сохраняются.
+                <b>Цифровая этика</b>: уважение, недопустимость унижения, ответственность за слова, согласие на публикацию чужих фото, приватность.
+                Если вы столкнулись с <b>травлей</b>: не отвечайте агрессией, сохраните доказательства (скриншоты), заблокируйте обидчика,
+                пожалуйтесь модераторам/администрации, расскажите взрослым/доверенному человеку, при угрозах — обратитесь в полицию.
+                Если травят другого — не оставайтесь в стороне: поддержите, не распространяйте, сообщите. Помните: молчание свидетелей
+                усиливает агрессора, а поддержка снижает вред.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-10">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">10</span>
+            <span class="item__name">Безопасность на маркетплейсах и онлайн-платформах</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                На маркетплейсах риски связаны с продавцами, оплатой и доставкой.
+                <b>Признаки мошенничества</b>: подозрительно низкая цена, требование оплаты вне платформы (перевод на карту, мессенджер),
+                просьба перейти по ссылке для «оформления», фейковые отзывы, новый продавец без истории, давление «срочно».
+                Правила: общайтесь и платите <b>только внутри платформы</b> (защита сделки), проверяйте рейтинг и отзывы, читайте условия возврата,
+                не сообщайте коды из SMS, не переходите в мессенджеры по просьбе продавца, проверяйте адрес сайта (фишинг),
+                сохраняйте переписку и чеки. При получении товара — проверяйте до оплаты, если возможно;
+                при проблеме — используйте официальные споры и поддержку, а не «личные договорённости».
+                Осторожно с «предоплатой» и «бронью» вне системы.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-11">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">11</span>
+            <span class="item__name">Безопасность мобильных устройств: обновления и разрешения</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Смартфон содержит максимум личной информации, поэтому требует внимания.
+                <b>Обновления ОС</b> и приложений закрывают уязвимости — устанавливайте их своевременно (лучше автоматически).
+                <b>Разрешения приложений</b>: выдавайте только необходимые (фонарик не нуждается в контактах и микрофоне),
+                проверяйте и отзывайте лишние, ограничивайте доступ к геолокации («только при использовании»).
+                Скачивайте приложения только из официальных магазинов, проверяйте разработчика и отзывы,
+                не устанавливайте APK из непроверенных источников. Включите блокировку экрана (PIN/биометрия), шифрование,
+                «Найти устройство», резервное копирование, 2FA для аккаунта.
+                Не подключайтесь к подозрительным Wi-Fi и не давайте доступ к устройству незнакомцам.
+                Регулярно удаляйте неиспользуемые приложения и проверяйте, какие из них имеют доступ к данным.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-12">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">12</span>
+            <span class="item__name">Риски публичных Wi-Fi и способы защиты</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Публичные Wi-Fi (кафе, аэропорты, транспорт) удобны, но небезопасны:
+                трафик могут перехватывать, злоумышленник может создать точку доступа с похожим названием (evil twin),
+                возможны поддельные страницы авторизации для кражи данных. Риски: перехват паролей и переписки, подмена сайтов,
+                внедрение вредоносного ПО. Защита: не входите в банковские приложения и не совершайте платежи через публичный Wi-Fi;
+                используйте <b>VPN</b> для шифрования трафика; отключите автоподключение к открытым сетям и «общий доступ к файлам»;
+                проверяйте название сети у сотрудников; используйте HTTPS и не игнорируйте предупреждения браузера;
+                по возможности раздавайте интернет со своего телефона; после подключения «забудьте» сеть.
+                Домашний Wi-Fi защитите паролем WPA2/WPA3 и сменой заводского пароля роутера.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-13">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">13</span>
+            <span class="item__name">Приватность в фото и видео: метаданные и геотеги</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Фото и видео могут содержать скрытую информацию — <b>метаданные (EXIF)</b>:
+                модель устройства, дата и время, параметры съёмки, а часто и <b>геотеги</b> (координаты места).
+                Публикуя снимок, вы можете случайно раскрыть домашний адрес, школу, маршруты, время отсутствия дома.
+                Дополнительные риски: на фото видны документы, номера, ключи, отражения, детали интерьера;
+                видео — голоса и лица окружающих без согласия. Защита: отключайте геотеги в камере или удаляйте метаданные перед публикацией;
+                не публикуйте фото документов и билетов; размывайте/закрывайте чувствительные детали; ограничивайте аудиторию;
+                получайте согласие на съёмку других людей; помните, что скриншоты и репосты выходят из-под контроля.
+                Проверять и удалять метаданные можно в настройках телефона и специальных приложениях.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-14">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">14</span>
+            <span class="item__name">Интернет и закон: ответственность за действия в сети</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                Интернет не отменяет закон: анонимность иллюзорна, действия оставляют следы (IP, аккаунты, метаданные),
+                а провайдеры и платформы хранят данные. <b>Ответственность наступает за</b>:
+                оскорбления и клевету, угрозы, распространение персональных данных без согласия,
+                нарушение авторских прав, экстремистские материалы, мошенничество, распространение вредоносных программ,
+                призывы к незаконным действиям, травлю. Возраст ответственности зависит от страны и вида правонарушения;
+                за несовершеннолетних отвечают родители. «Это была шутка» не освобождает от последствий.
+                Цифровая этика и закон требуют уважения прав других: на приватность, честь, достоинство, интеллектуальную собственность.
+                Перед публикацией спросите: не нарушает ли это чьи-то права и закон? Сохраняйте доказательства при нарушениях против вас.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item" id="lec-15">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">15</span>
+            <span class="item__name">План действий при инциденте (взлом, угрозы)</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <p>
+                При взломе аккаунта: <b>не паникуйте</b>; смените пароль (с другого устройства), включите/перепроверьте <b>2FA</b>, завершите все сеансы,
+                проверьте привязанные почты, телефоны, платёжные данные и правила пересылки; сообщите в поддержку сервиса;
+                предупредите контакты о возможных сообщениях от вашего имени; проверьте устройства на вредоносное ПО.
+                При финансовом мошенничестве: заблокируйте карту, обратитесь в банк, сохраните чеки и переписку, подайте заявление в полицию.
+                При угрозах и травле: сохраните доказательства (скриншоты с датой, ссылки), заблокируйте агрессора, пожалуйтесь платформе,
+                расскажите доверенным взрослым; при реальной опасности — в полицию. Общий алгоритм:
+                <b>остановить утечку → сохранить доказательства → устранить причину → сообщить ответственным → восстановить защиту → сделать выводы</b>.
+                Не удаляйте переписку и не «договаривайтесь» с вымогателями.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ТЕСТЫ -->
+    <section class="panel">
+      <header class="panel__header">
+        <h2 class="panel__title">Тесты</h2>
+        <span class="panel__badge">Проверка знаний</span>
+      </header>
+
+      <div class="accordion" data-accordion>
+
+        <!-- ТЕСТ 01 -->
+        <div class="item" id="test-01">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">01</span>
+            <span class="item__name">Тест по теме «Цифровой след»</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <form class="quiz" data-quiz novalidate>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>1.</b> Что такое цифровой след?</p>
+                  <label class="quiz__opt"><input type="radio" name="q1" value="a" data-correct="false"><span>Совокупность всех данных, которые пользователь оставляет в интернете</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q1" value="b" data-correct="true"><span>Данные, которые остаются после активности пользователя в сети (публикации и автоматически собранные)</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q1" value="c" data-correct="false"><span>Только комментарии и посты, которые человек публикует сам</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q1" value="d" data-correct="false"><span>История покупок в интернет-магазинах</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>2.</b> Какой из примеров относится к <i>пассивному</i> цифровому следу?</p>
+                  <label class="quiz__opt"><input type="radio" name="q2" value="a" data-correct="false"><span>Пост в соцсети</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q2" value="b" data-correct="false"><span>Комментарий под видео</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q2" value="c" data-correct="true"><span>IP-адрес и cookies, которые сохраняются автоматически</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q2" value="d" data-correct="false"><span>Отзыв в интернет-магазине</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>3.</b> Почему важно понимать свой цифровой след?</p>
+                  <label class="quiz__opt"><input type="radio" name="q3" value="a" data-correct="true"><span>Чтобы защищать приватность, репутацию и не попадать в руки мошенников</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q3" value="b" data-correct="false"><span>Чтобы получать больше рекламы</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q3" value="c" data-correct="false"><span>Чтобы увеличить количество подписчиков</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q3" value="d" data-correct="false"><span>Это не важно — интернет всё забывает</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>4.</b> Что из перечисленного поможет уменьшить цифровой след?</p>
+                  <label class="quiz__opt"><input type="radio" name="q4" value="a" data-correct="false"><span>Публиковать больше личной информации</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q4" value="b" data-correct="true"><span>Проверять настройки приватности и удалять старые аккаунты</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q4" value="c" data-correct="false"><span>Использовать один пароль для всех сервисов</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q4" value="d" data-correct="false"><span>Не выходить в интернет вообще</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>5.</b> Верно ли утверждение: «Удалённые из интернета данные исчезают навсегда»?</p>
+                  <label class="quiz__opt"><input type="radio" name="q5" value="a" data-correct="false"><span>Верно — как только пост удалён, его нет</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q5" value="b" data-correct="true"><span>Неверно — данные могут оставаться в кэше, копиях и архивах</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q5" value="c" data-correct="false"><span>Верно, если удалить аккаунт</span></label>
+                  <label class="quiz__opt"><input type="radio" name="q5" value="d" data-correct="false"><span>Верно только для фото</span></label>
+                </div>
+
+                <div class="quiz__actions">
+                  <button type="button" class="btn" data-quiz-check>Проверить</button>
+                  <button type="button" class="btn btn--ghost" data-quiz-reset hidden>Пройти заново</button>
+                </div>
+                <p class="quiz__result" data-quiz-result hidden></p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ТЕСТ 02 -->
+        <div class="item" id="test-02">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">02</span>
+            <span class="item__name">Тест по теме «Персональные данные»</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <form class="quiz" data-quiz novalidate>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>1.</b> Что относится к персональным данным?</p>
+                  <label class="quiz__opt"><input type="radio" name="p1" value="a" data-correct="false"><span>Только фамилия и имя</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p1" value="b" data-correct="false"><span>Только паспортные данные</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p1" value="c" data-correct="true"><span>Любая информация, по которой можно идентифицировать человека</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p1" value="d" data-correct="false"><span>Только данные банковских карт</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>2.</b> Что <i>не стоит</i> публиковать в открытом доступе?</p>
+                  <label class="quiz__opt"><input type="radio" name="p2" value="a" data-correct="false"><span>Свои любимые фильмы</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p2" value="b" data-correct="true"><span>Фото паспорта, билетов и банковских карт</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p2" value="c" data-correct="false"><span>Мемы и картинки</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p2" value="d" data-correct="false"><span>Название любимой книги</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>3.</b> Принцип минимизации данных означает:</p>
+                  <label class="quiz__opt"><input type="radio" name="p3" value="a" data-correct="true"><span>Сообщать только ту информацию, которая действительно необходима</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p3" value="b" data-correct="false"><span>Указывать как можно больше данных о себе</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p3" value="c" data-correct="false"><span>Хранить все данные в одном месте</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p3" value="d" data-correct="false"><span>Не пользоваться интернетом</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>4.</b> Что такое доксинг?</p>
+                  <label class="quiz__opt"><input type="radio" name="p4" value="a" data-correct="false"><span>Вид компьютерной игры</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p4" value="b" data-correct="false"><span>Способ шифрования данных</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p4" value="c" data-correct="true"><span>Публикация чьих-то личных данных без согласия с целью травли</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p4" value="d" data-correct="false"><span>Резервное копирование файлов</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>5.</b> Что следует сделать перед установкой приложения?</p>
+                  <label class="quiz__opt"><input type="radio" name="p5" value="a" data-correct="false"><span>Сразу выдать все разрешения</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p5" value="b" data-correct="false"><span>Отключить антивирус</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p5" value="c" data-correct="true"><span>Проверить, какие разрешения оно запрашивает, и выдать только необходимые</span></label>
+                  <label class="quiz__opt"><input type="radio" name="p5" value="d" data-correct="false"><span>Сообщить разработчику свой пароль</span></label>
+                </div>
+
+                <div class="quiz__actions">
+                  <button type="button" class="btn" data-quiz-check>Проверить</button>
+                  <button type="button" class="btn btn--ghost" data-quiz-reset hidden>Пройти заново</button>
+                </div>
+                <p class="quiz__result" data-quiz-result hidden></p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ТЕСТ 03 -->
+        <div class="item" id="test-03">
+          <button class="item__head" aria-expanded="false">
+            <span class="item__num">03</span>
+            <span class="item__name">Тест по теме «Кибербезопасность»</span>
+            <span class="item__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="item__body">
+            <div class="item__content">
+              <form class="quiz" data-quiz novalidate>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>1.</b> Какой пароль считается наиболее надёжным?</p>
+                  <label class="quiz__opt"><input type="radio" name="k1" value="a" data-correct="false"><span>qwerty123</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k1" value="b" data-correct="false"><span>Дата рождения</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k1" value="c" data-correct="true"><span>Длинная уникальная фраза, сгенерированная менеджером паролей</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k1" value="d" data-correct="false"><span>Имя домашнего питомца</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>2.</b> Что добавляет двухфакторная аутентификация (2FA)?</p>
+                  <label class="quiz__opt"><input type="radio" name="k2" value="a" data-correct="true"><span>Второй фактор подтверждения личности помимо пароля</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k2" value="b" data-correct="false"><span>Второй пароль вместо первого</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k2" value="c" data-correct="false"><span>Отключает вход в аккаунт навсегда</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k2" value="d" data-correct="false"><span>Ускоряет работу интернета</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>3.</b> Что такое фишинг?</p>
+                  <label class="quiz__opt"><input type="radio" name="k3" value="a" data-correct="false"><span>Способ резервного копирования</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k3" value="b" data-correct="true"><span>Мошенничество, при котором выманивают данные или заставляют совершить действие</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k3" value="c" data-correct="false"><span>Вид антивируса</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k3" value="d" data-correct="false"><span>Тип социальной сети</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>4.</b> Что делать при подключении к публичному Wi-Fi?</p>
+                  <label class="quiz__opt"><input type="radio" name="k4" value="a" data-correct="false"><span>Сразу входить в банковское приложение</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k4" value="b" data-correct="false"><span>Отключить HTTPS-проверку</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k4" value="c" data-correct="true"><span>Использовать VPN и не совершать платежей</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k4" value="d" data-correct="false"><span>Подключиться к сети без пароля и названия</span></label>
+                </div>
+
+                <div class="quiz__q" data-question>
+                  <p class="quiz__q-title"><b>5.</b> Что из перечисленного — признак фишингового сообщения?</p>
+                  <label class="quiz__opt"><input type="radio" name="k5" value="a" data-correct="false"><span>Официальный адрес отправителя</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k5" value="b" data-correct="false"><span>Отсутствие ссылок и просьб</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k5" value="c" data-correct="true"><span>Срочность, требование сообщить код или перейти по ссылке</span></label>
+                  <label class="quiz__opt"><input type="radio" name="k5" value="d" data-correct="false"><span>Подпись с именем отправителя</span></label>
+                </div>
+
+                <div class="quiz__actions">
+                  <button type="button" class="btn" data-quiz-check>Проверить</button>
+                  <button type="button" class="btn btn--ghost" data-quiz-reset hidden>Пройти заново</button>
+                </div>
+                <p class="quiz__result" data-quiz-result hidden></p>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Название проекта. Все права защищены.</p>
+  </footer>
+
+  <script src="scrypt2.js"></script>
+</body>
+</html>
